@@ -11,7 +11,7 @@
         Pass
         {
             Tags{"LightMode" = "ForwardBase"}
-            ZWrite Off
+            ZWrite Off   //Render Queue 1000~3000 for Test
             Blend SrcAlpha OneMinusSrcAlpha
 
 
