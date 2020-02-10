@@ -18,7 +18,7 @@
                                         //"IgnoreProjector"="True"  不受投影器影响
                                         //"ForceNoShadowCasting"="True" 不产生阴影
                                         //"Queue"="Transparent+100" 渲染队列优先级 Background Geometry AlphaTest Transparent Overlay
-                                           //Background = 1000， Geometry = 2000, AlphaTest = 2450， Transparent = 3000，最后Overlay = 4000。
+                                        //Background = 1000， Geometry = 2000, AlphaTest = 2450， Transparent = 3000，最后Overlay = 4000。
                                         
         LOD 200     //Level of Detail //Project settings => Quality Settings => Maxmum LOD Level
                     //设定的LOD小于SubShader所指定的LOD时，这个SubShader将不可用
@@ -27,6 +27,8 @@
         //#pragma surface surfaceFunction lightModel [optionalparams]
         // Physically based Standard lighting model, and enable shadows on all light types
         #pragma surface surf Standard fullforwardshadows
+        
+        //#pragma surface surf        LightModel    vertex:vert
 
         // Use shader model 3.0 target, to get nicer looking lighting
         #pragma target 3.0
