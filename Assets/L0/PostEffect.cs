@@ -17,10 +17,13 @@ public class PostEffect : MonoBehaviour
         //    for (int y = 0; y < 720; y++)
         //    {
         //        //pixels[x + 1280 * y].r = 1.2f * 0.7f; //Mathf.Sin(0.7f); Mathf.Pow(1.2f, 3);
-        //        pixels[x + 1280 * y].r = 0.7f;
         //    }
         //}
 
+        //Texture2D outputTex = new Texture2D(512, 512, TextureFormat.RGBA32, false);
+        //outputTex.SetPixels(pixels);
+        //outputTex.Apply();
+        //mat.SetTexture(1,outputTex);
         Graphics.Blit(src, dest, mat);
     }
 }
