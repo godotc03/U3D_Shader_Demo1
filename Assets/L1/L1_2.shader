@@ -1,4 +1,4 @@
-﻿Shader "Lessons/L1_2"
+﻿Shader "Lessons/flower"
 {
     Properties
     {
@@ -19,7 +19,6 @@
         CGPROGRAM
         // Physically based Standard lighting model, and enable shadows on all light types
         #pragma surface surf Lambert alpha
-        #pragma vertex vert
 
         // Use shader model 3.0 target, to get nicer looking lighting
         #pragma target 3.0
@@ -51,14 +50,6 @@
             o.Alpha = c.a;
         }
         
-        void vert(inout appdata_full v)
-        {
-            //v.vertex.xyz += (_SinTime.y) * float3(3,0,1); 
-            
-            
-            half dis = distance(v.vertex ,_Pos) ;
-            v.vertex.xyz += dis * (_SinTime.y) * float3(.3,0,.1); 
-        }
         ENDCG
     }
     FallBack "Transparent/Cutout/VertexLit"
