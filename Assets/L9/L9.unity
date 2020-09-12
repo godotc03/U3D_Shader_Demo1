@@ -209,23 +209,23 @@ LODGroup:
   serializedVersion: 2
   m_LocalReferencePoint: {x: 0.13999945, y: 0, z: 0.59500027}
   m_Size: 2.1900005
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
+  m_FadeMode: 1
+  m_AnimateCrossFading: 1
   m_LastLODIsBillboard: 0
   m_LODs:
-  - screenRelativeHeight: 0.5480917
+  - screenRelativeHeight: 0.5374814
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 1300128576}
-  - screenRelativeHeight: 0.12581797
+  - screenRelativeHeight: 0.14438584
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 1068868339}
-  - screenRelativeHeight: 0.008432742
+  - screenRelativeHeight: 0.010645359
     fadeTransitionWidth: 0
     renderers:
-    - renderer: {fileID: 1156742560}
     - renderer: {fileID: 1693837920}
+    - renderer: {fileID: 1156742560}
   m_Enabled: 1
 --- !u!4 &780056772
 Transform:
@@ -748,6 +748,16 @@ PrefabInstance:
     - target: {fileID: 4279449019447086, guid: eded051879df4c147b9010199d240258, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 205814739888609900, guid: eded051879df4c147b9010199d240258,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 136213828768348902, guid: eded051879df4c147b9010199d240258,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eded051879df4c147b9010199d240258, type: 3}
